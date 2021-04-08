@@ -80,7 +80,30 @@ os.system("start file:///" + str(filePath) + "\\w1_class_local.html")</pre>
 <p>2.type "git pull origin master"</p>
 <p>3.copy cmsimde&gt;up_dair&gt;{cms.bat、acp.bat、http、http-server.py、localhost.crt、localhost.key}</p>
 <p>4.cover into (name)</p>
-<h1>SSH</h1>
+<h2>W6、W7 (remote Heroku)</h2>
+<p>1.create heroku account</p>
+<p>2.create heroku repositories</p>
+<p>3.download heroku.7z&amp;<span>uncompress filename to Y:home</span></p>
+<p><span>4.add  command ipv6.bat</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set path_heroku=%Disk%:\heroku\bin;
+</pre>
+<p>&amp;</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">REM for heroku login
+set HTTP_PROXY=http://[2001:288:6004:17::53]:3128
+set HTTPS_PROXY=http://[2001:288:6004:17::53]:3128</pre>
+<p>&amp;</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">path=%Disk%:;%path_python%;%path_portablegit%;%path_heroku%;%GIT_SSH%;%path%;
+</pre>
+<p>5.check heroku version on ipv6.bat</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">heroku version</pre>
+<p>6.login heroku on ipv6.bat</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">heroku login -i
+Email:
+Password:</pre>
+<p>7.enter own github repositories</p>
+<p>8.link heroku <span>repositories</span> and github <span>repositories</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">heroku git:remote -a (heroku repositories name)</pre>
+<p></p><h1>SSH</h1>
 <p>1.ssh(cmd)</p>
 <p>2.<code class="js plain">ssh-keygen -t rsa -b 4096 -C </code><code class="js string">"使用者學號"(cmd)</code></p>
 <p><code class="js string"></code>3.go to Y:putty/putt/puttgen.exe then pounch genrate</p>
@@ -92,3 +115,6 @@ os.system("start file:///" + str(filePath) + "\\w1_class_local.html")</pre>
 <p>9.add "set GIT_SSH=%Disk%:\putty\plink.exe" in ipv6.bat</p>
 <p>10. add "git@github.com:(username)/(Repositories).git</p>
 <p>11.set github sshkey then finish</p>
+<div id="gtx-trans" style="position: absolute; left: 12px; top: 1412.27px;">
+<div class="gtx-trans-icon"></div>
+</div>
