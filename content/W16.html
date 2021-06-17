@@ -134,28 +134,27 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W12 << <a href='W12.html'>Previous</a> <a href='W14.html'>Next</a> >> W14<br /><h1>W14(gitlab remote)</h1>
-<p>1.create account</p>
-<p>2.add "<span>.gitlab-ci.yml" file into your repositorie</span></p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">pages:
-  stage: deploy
-  script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
-  artifacts:
-    paths:
-    - public
-  only:
-  - main
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive</pre>
-<p><span>3.open ".git/config" and add:</span></p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">[remote "gitlab"]
-    url = https://gitlab.com/username/repname.git
-    fetch = +refs/heads/*:refs/remotes/gitlab/*</pre>
-<p>4.git push gitlab(cmd)</p>
-<br />W12 << <a href='W12.html'>Previous</a> <a href='W14.html'>Next</a> >> W14</div>
+    <div id="tipue_search_content">W15 << <a href='W15.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH<br /><h1>W16</h1>
+<p>fossil rep remote</p>
+<p>1.get fossil account</p>
+<p>2.create a fossil rep</p>
+<p>3.mkdir W16&gt;fossil</p>
+<p>4.fossil clone(cmd)</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">fossal clone https://yen@fosssil.kmol.info/u/wcm wcm.fossil</pre>
+<p>5.mkdir wd(then cd in)</p>
+<p>6.mkdir wcm(then cd in)</p>
+<p>7.type</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">fossil open ./../../cwm.fossil</pre>
+<p>8.cd ..</p>
+<p>9.type</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git clone --recurse- submodules URL.git</pre>
+<p>10.clone rep to "wcm"</p>
+<p>11.type</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">fossil add .
+#or
+fossil addremove
+fossil commit -m"versiom"</pre>
+<p><br/><br/></p><br />W15 << <a href='W15.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH</div>
         
     <!-- footer -->
       <div class="container">
